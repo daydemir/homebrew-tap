@@ -5,21 +5,21 @@
 class Ralph < Formula
   desc "Autonomous plan execution engine built on GSD planning"
   homepage "https://github.com/daydemir/ralph"
-  version "0.4.0-alpha.6"
+  version "0.4.0-alpha.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/daydemir/ralph/releases/download/v0.4.0-alpha.6/ralph_0.4.0-alpha.6_darwin_amd64.tar.gz"
-      sha256 "76682e2aa4e9123175c09eda543ed7e5ab38b0b2e476cac8c28232c93f3b2bf3"
+      url "https://github.com/daydemir/ralph/releases/download/v0.4.0-alpha.7/ralph_0.4.0-alpha.7_darwin_amd64.tar.gz"
+      sha256 "c1a1ec01ecbf4955ce1146757a0e184c3a05aaaadcd115710cd781828f1dee5c"
 
       def install
         bin.install "ralph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/daydemir/ralph/releases/download/v0.4.0-alpha.6/ralph_0.4.0-alpha.6_darwin_arm64.tar.gz"
-      sha256 "0d9af724fd41216b839b4da5459197b3a5f09b8120cdabdc204c43745560bb2d"
+      url "https://github.com/daydemir/ralph/releases/download/v0.4.0-alpha.7/ralph_0.4.0-alpha.7_darwin_arm64.tar.gz"
+      sha256 "61488c8e585935857959569a1df5aed08ed59734dd90640ec76901b0aafd3fe4"
 
       def install
         bin.install "ralph"
@@ -29,15 +29,15 @@ class Ralph < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daydemir/ralph/releases/download/v0.4.0-alpha.6/ralph_0.4.0-alpha.6_linux_amd64.tar.gz"
-      sha256 "b5ddbcf4b6d79118592077613cb732b794f5cf4b4ac79d5145cb58b6c05e4142"
+      url "https://github.com/daydemir/ralph/releases/download/v0.4.0-alpha.7/ralph_0.4.0-alpha.7_linux_amd64.tar.gz"
+      sha256 "3759d45e2934780351b9552b25164dd9dd27de2fcfb4a2a740661c1709afb7fe"
       def install
         bin.install "ralph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daydemir/ralph/releases/download/v0.4.0-alpha.6/ralph_0.4.0-alpha.6_linux_arm64.tar.gz"
-      sha256 "761cb89985b9b4d1b1db6668037bad569a6a436a1aec925a1906d827616bbdd7"
+      url "https://github.com/daydemir/ralph/releases/download/v0.4.0-alpha.7/ralph_0.4.0-alpha.7_linux_arm64.tar.gz"
+      sha256 "ce9198339964074a969abaf19586c74f580b8bfdea26f049d22212f25cc2df3a"
       def install
         bin.install "ralph"
       end
