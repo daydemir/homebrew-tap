@@ -5,21 +5,21 @@
 class Ralph < Formula
   desc "Autonomous plan execution engine built on GSD planning"
   homepage "https://github.com/daydemir/ralph"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/daydemir/ralph/releases/download/v0.6.0/ralph_0.6.0_darwin_amd64.tar.gz"
-      sha256 "513a5c14a1dbc2ca766a82a6d41bd4eedca6954d1b7858ec36f4a2f7f8fd5411"
+      url "https://github.com/daydemir/ralph/releases/download/v0.6.1/ralph_0.6.1_darwin_amd64.tar.gz"
+      sha256 "85cd25cc6dba07bb135438f65fd67ee596745d4640213bce4b3ae40c04206ed2"
 
       def install
         bin.install "ralph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/daydemir/ralph/releases/download/v0.6.0/ralph_0.6.0_darwin_arm64.tar.gz"
-      sha256 "e59298d0a02c04a44173bd754711440fe7359364e69cf7dac56bb68d712262ce"
+      url "https://github.com/daydemir/ralph/releases/download/v0.6.1/ralph_0.6.1_darwin_arm64.tar.gz"
+      sha256 "a73aedd85a2d5946e4c3825c7b1734f08af19d724e1e23bb780d3f870209a23a"
 
       def install
         bin.install "ralph"
@@ -29,15 +29,15 @@ class Ralph < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daydemir/ralph/releases/download/v0.6.0/ralph_0.6.0_linux_amd64.tar.gz"
-      sha256 "3748f96e6c86d2df59767d73cd2e7ad88e7ca08a13ca3bd49e05ba66a4d0fdaf"
+      url "https://github.com/daydemir/ralph/releases/download/v0.6.1/ralph_0.6.1_linux_amd64.tar.gz"
+      sha256 "af6ff50589567a3c191050f2e88abba36c78df27e1b0aa4dcded77e7f9063b46"
       def install
         bin.install "ralph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daydemir/ralph/releases/download/v0.6.0/ralph_0.6.0_linux_arm64.tar.gz"
-      sha256 "072109732a3e39ebfc0f2eef4ccda5d584c8522a2e8841c5ac01211b6457770e"
+      url "https://github.com/daydemir/ralph/releases/download/v0.6.1/ralph_0.6.1_linux_arm64.tar.gz"
+      sha256 "29afbaa4286a4e012fef18ca509997fef04670adf8dceb4b7d35e5b2d34c4aaf"
       def install
         bin.install "ralph"
       end
