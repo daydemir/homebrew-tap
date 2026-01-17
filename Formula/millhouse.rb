@@ -5,21 +5,21 @@
 class Millhouse < Formula
   desc "Autonomous PRD-driven development CLI powered by Claude"
   homepage "https://github.com/suelio/millhouse"
-  version "0.1.8"
+  version "0.1.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/daydemir/millhouse/releases/download/v0.1.8/millhouse_0.1.8_darwin_amd64.tar.gz"
-      sha256 "823ad6376ec50adace1ee4acf91778ce714b9d2e0505d03f0767bb64706db688"
+      url "https://github.com/daydemir/millhouse/releases/download/v0.1.9/millhouse_0.1.9_darwin_amd64.tar.gz"
+      sha256 "02180dc6ece5e77963fb02e0517a09e95d6848946a65dc4ea025597a40800c59"
 
       def install
         bin.install "mill"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/daydemir/millhouse/releases/download/v0.1.8/millhouse_0.1.8_darwin_arm64.tar.gz"
-      sha256 "789bf5fd9ec484bdbaaba3ce5b56f107f67e13c1e2b8a3633005a0ff885e612a"
+      url "https://github.com/daydemir/millhouse/releases/download/v0.1.9/millhouse_0.1.9_darwin_arm64.tar.gz"
+      sha256 "f288ba0df382ad04bf02a09ccdea71045d90426e3a1e2d072d5c010495626e7a"
 
       def install
         bin.install "mill"
@@ -29,15 +29,15 @@ class Millhouse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daydemir/millhouse/releases/download/v0.1.8/millhouse_0.1.8_linux_amd64.tar.gz"
-      sha256 "186d20ab2bab190c072aca35ee64a37b9670d7e37098bad4f8b39301fea2a46a"
+      url "https://github.com/daydemir/millhouse/releases/download/v0.1.9/millhouse_0.1.9_linux_amd64.tar.gz"
+      sha256 "f2a47934d227b9ec64102cb559401836e14e6344a5dccc72080316af788f51e8"
       def install
         bin.install "mill"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daydemir/millhouse/releases/download/v0.1.8/millhouse_0.1.8_linux_arm64.tar.gz"
-      sha256 "e25eee66a8465010de71cf7dae7d65d4ff92e95e426af8384947f0b00c740569"
+      url "https://github.com/daydemir/millhouse/releases/download/v0.1.9/millhouse_0.1.9_linux_arm64.tar.gz"
+      sha256 "a8bdda0195163e9deb4c8c043e10548a8030af742f34a02d748418bdf164c02f"
       def install
         bin.install "mill"
       end
