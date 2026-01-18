@@ -5,46 +5,46 @@
 class Millhouse < Formula
   desc "Autonomous PRD-driven development CLI powered by Claude"
   homepage "https://github.com/suelio/millhouse"
-  version "0.2.1"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/daydemir/millhouse/releases/download/v0.2.1/millhouse_0.2.1_darwin_amd64.tar.gz"
-      sha256 "37609bce0a999430566158112e2136a9bf1c13ecb01ed860e29bc1abfd2e28c2"
+      url "https://github.com/daydemir/millhouse/releases/download/v0.3.1/millhouse_0.3.1_darwin_amd64.tar.gz"
+      sha256 "773945c99e656ab7f9ab88c157841c3ecf5cd8a3cf1a1d2f7e9862ae3c5ffbe1"
 
       def install
-        bin.install "mill"
+        bin.install "mil"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/daydemir/millhouse/releases/download/v0.2.1/millhouse_0.2.1_darwin_arm64.tar.gz"
-      sha256 "140fea0a519be915afb6b918638ff77124115ea48556d0058b0b5f5111c0bd86"
+      url "https://github.com/daydemir/millhouse/releases/download/v0.3.1/millhouse_0.3.1_darwin_arm64.tar.gz"
+      sha256 "c7936c1bb4d55e73ab1beb404175317fc9b0bc3481eea43bb5a9c91250d7921f"
 
       def install
-        bin.install "mill"
+        bin.install "mil"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daydemir/millhouse/releases/download/v0.2.1/millhouse_0.2.1_linux_amd64.tar.gz"
-      sha256 "7c8cb20a19b6c575109039d4f7bcdd330ab8c630ec14a76dc32a9fdacd6f7d93"
+      url "https://github.com/daydemir/millhouse/releases/download/v0.3.1/millhouse_0.3.1_linux_amd64.tar.gz"
+      sha256 "c4cf3f6f58f32f70ae5402c0cb7260662f90c817b15e87739b18ea9d1f53e789"
       def install
-        bin.install "mill"
+        bin.install "mil"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daydemir/millhouse/releases/download/v0.2.1/millhouse_0.2.1_linux_arm64.tar.gz"
-      sha256 "591c88d21067cb95589e36ab9bd6c817a71930002d8d7236db502005f2817e55"
+      url "https://github.com/daydemir/millhouse/releases/download/v0.3.1/millhouse_0.3.1_linux_arm64.tar.gz"
+      sha256 "32f5f0208848bba3a834abff7309dc64f91f5cc3af68583e2655805e5f78faf3"
       def install
-        bin.install "mill"
+        bin.install "mil"
       end
     end
   end
 
   test do
-    system "#{bin}/mill", "version"
+    system "#{bin}/mil", "version"
   end
 end
