@@ -5,21 +5,21 @@
 class Milhouse < Formula
   desc "Autonomous PRD-driven development CLI powered by Claude"
   homepage "https://github.com/daydemir/milhouse"
-  version "0.4.11"
+  version "0.4.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/daydemir/milhouse/releases/download/v0.4.11/milhouse_0.4.11_darwin_amd64.tar.gz"
-      sha256 "e263e1614cfb98d6ebddf8d513e4fa823d3a1b037b4f2366ae80cde09de04b71"
+      url "https://github.com/daydemir/milhouse/releases/download/v0.4.12/milhouse_0.4.12_darwin_amd64.tar.gz"
+      sha256 "95d751c3aeb98116347c1a6daff31e8f5496f613e98bd7bf916bfe78353d01cb"
 
       def install
         bin.install "mil"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/daydemir/milhouse/releases/download/v0.4.11/milhouse_0.4.11_darwin_arm64.tar.gz"
-      sha256 "f5b6ad47e262a2ee3f4a542dec59338683669235d7c0073dde4d4841f635ff8f"
+      url "https://github.com/daydemir/milhouse/releases/download/v0.4.12/milhouse_0.4.12_darwin_arm64.tar.gz"
+      sha256 "810c124e24beb886be42970454ea2cbc638c815eb6a6f4b346b2c3ada3c626cd"
 
       def install
         bin.install "mil"
@@ -29,15 +29,15 @@ class Milhouse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daydemir/milhouse/releases/download/v0.4.11/milhouse_0.4.11_linux_amd64.tar.gz"
-      sha256 "8bbbba0ca3eb0c15b3839289c75e86f9cfbf8b802b6096097f5de44aa9c4c571"
+      url "https://github.com/daydemir/milhouse/releases/download/v0.4.12/milhouse_0.4.12_linux_amd64.tar.gz"
+      sha256 "da77e722ab5fd7215fb4641d1bee35d069664e3eb032c7bebc928a801f1a8efd"
       def install
         bin.install "mil"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daydemir/milhouse/releases/download/v0.4.11/milhouse_0.4.11_linux_arm64.tar.gz"
-      sha256 "5c73579e19480379bcd38a8d56f9364fa5141ec06d6d3e18ad725d829c3e8893"
+      url "https://github.com/daydemir/milhouse/releases/download/v0.4.12/milhouse_0.4.12_linux_arm64.tar.gz"
+      sha256 "e492e5874cad15516b0d19f27cb374688c42def7c17f3b462f8984bcaf2f0f24"
       def install
         bin.install "mil"
       end
