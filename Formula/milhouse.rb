@@ -11,7 +11,7 @@ class Milhouse < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/daydemir/milhouse/releases/download/v0.4.11/milhouse_0.4.11_darwin_amd64.tar.gz"
-      sha256 "98cb12510253254d936a0dabec22366d29267f00918fdb7604488a324ab04e25"
+      sha256 "e263e1614cfb98d6ebddf8d513e4fa823d3a1b037b4f2366ae80cde09de04b71"
 
       def install
         bin.install "mil"
@@ -19,7 +19,7 @@ class Milhouse < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/daydemir/milhouse/releases/download/v0.4.11/milhouse_0.4.11_darwin_arm64.tar.gz"
-      sha256 "cb6519a3f82e377d4b857651548d3a2ddfe131ae84887a591760a7c9035c5dc6"
+      sha256 "f5b6ad47e262a2ee3f4a542dec59338683669235d7c0073dde4d4841f635ff8f"
 
       def install
         bin.install "mil"
@@ -30,14 +30,14 @@ class Milhouse < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/daydemir/milhouse/releases/download/v0.4.11/milhouse_0.4.11_linux_amd64.tar.gz"
-      sha256 "d5b2d5e20c52d203eca41694178ece5016c2f779b3e664f678de2764c78c2332"
+      sha256 "8bbbba0ca3eb0c15b3839289c75e86f9cfbf8b802b6096097f5de44aa9c4c571"
       def install
         bin.install "mil"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/daydemir/milhouse/releases/download/v0.4.11/milhouse_0.4.11_linux_arm64.tar.gz"
-      sha256 "852c96684330acbc321ae13d4b0413957396f766acd0b4c07d7ae5f12ca7e3e1"
+      sha256 "5c73579e19480379bcd38a8d56f9364fa5141ec06d6d3e18ad725d829c3e8893"
       def install
         bin.install "mil"
       end
